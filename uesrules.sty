@@ -1,0 +1,73 @@
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Schola}
+
+\usepackage[dvipsnames]{xcolor}
+\pagecolor{white}
+\color{black}
+
+\usepackage{tikz}
+
+\usepackage{unicode-math}
+\setmathfont{texgyreschola-math.otf}[math-style=TeX]
+
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{calc}
+
+\usepackage{subcaption}
+\usepackage{scrlayer-scrpage} % Manage headers and footers in Koma-Script document classes
+\setlength{\footskip}{1cm}
+
+\usepackage[type={CC}, version={4.0}, modifier={by}]{doclicense} % Add text and icons for creative commons license
+
+\usepackage[hidelinks]{hyperref} % Add hyperlinks to the pdf file. This should usually be the last package loaded before \begin{document}
+
+\makeatletter
+\newcommand{\version}[1]{\small\newcommand{\@version}{#1}}
+\makeatother
+
+% Set header
+\clearpairofpagestyles
+\makeatletter
+\cfoot*{{\footnotesize \normalshape{Version \@version}}}
+\makeatother
+
+% Minimize unwanted hyphenation
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\setkomafont{section}{\setmainfont{Special Elite}\color{black}\Large}
+\setkomafont{subsection}{\setmainfont{Special Elite}\color{black}\large}
+\setkomafont{subsubsection}{\setmainfont{Special Elite}\color{black}\normalsize}
+\setkomafont{descriptionlabel}{\setmainfont{Tex Gyre Schola}\normalsize\bfseries}
+
+\RedeclareSectionCommand[
+  runin=false,
+  afterindent=false,
+  beforeskip=2ex,
+  afterskip=0ex,
+]{section}
+
+\RedeclareSectionCommand[
+  runin=false,
+  afterindent=false,
+  beforeskip=2ex,
+  afterskip=0ex,
+]{subsection}
+
+\RedeclareSectionCommand[
+  runin=false,
+  afterindent=false,
+  beforeskip=2ex,
+  afterskip=0ex,
+]{subsubsection}
+
+
+
+
+\version{0.1}
+\raggedright%
+
+\definecolor{bandana}{HTML}{D41e25}
