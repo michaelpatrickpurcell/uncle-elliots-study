@@ -6,6 +6,7 @@
 \color{black}
 
 \usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
 
 \usepackage{unicode-math}
 \setmathfont{texgyreschola-math.otf}[math-style=TeX]
@@ -65,9 +66,44 @@
 ]{subsubsection}
 
 
-
-
 \version{0.1}
 \raggedright%
 
 \definecolor{bandana}{HTML}{D41e25}
+\definecolor{psgreen}{HTML}{6be4df}
+\definecolor{psblue}{HTML}{767ee1}
+\definecolor{psred}{HTML}{f75f66}
+\definecolor{pspink}{HTML}{f69dc8}
+
+\tikzset{cross/.pic={
+\path[draw, thick, fill=#1] (0,10mm) -- (3mm, 10mm) -- (3mm,3mm) -- (10mm,3mm) -- (10mm,-3mm) -- (3mm,-3mm) -- (3mm,-10mm) -- (-3mm, -10mm) -- (-3mm, -3mm) -- (-10mm, -3mm) -- (-10mm, 3mm) -- (-3mm,3mm) -- (-3mm, 10mm) -- cycle;
+}}
+
+\tikzset{plugboard/.pic={
+\node[inner sep=0pt, minimum width=84mm, minimum height=84mm, draw, ultra thick, fill=lightgray] at (0,0) {};
+
+\foreach \x in {-31.5mm, -10.5mm, 10.5mm, 31.5mm}
+	\foreach \y in {-31.5mm, -10.5mm, 10.5mm, 31.5mm}
+		\node[draw, thick, minimum width=21mm, minimum height=21mm] at (\x, \y) {};
+		
+\node[draw, thick, fill=white, minimum width=12.5mm, minimum height=12.5mm] at (-31.5mm, 31.5mm) {};
+\node[draw, thick, fill=white, minimum width=12.5mm, minimum height=12.5mm] at (-10.5mm, 10.5mm) {};
+\node[draw, thick, fill=white, minimum width=12.5mm, minimum height=12.5mm] at (10.5mm, -31.5mm) {};
+\node[draw, thick, fill=pspink, minimum width=12.5mm, minimum height=12.5mm] at (31.5mm, -31.5mm) {};
+
+\node[draw, thick, fill=white, circle, minimum width=13.5mm] at (-10.5mm, 31.5mm) {};
+\node[draw, thick, fill=white, circle, minimum width=13.5mm] at (31.5mm, 31.5mm) {};
+\node[draw, thick, fill=psred, circle, minimum width=13.5mm] at (-31.5mm, 10.5mm) {};
+\node[draw, thick, fill=white, circle, minimum width=13.5mm] at (10.5mm, -10.5mm) {};
+
+\node[draw, thick, fill=psgreen, regular polygon, regular polygon sides=3, minimum width=17mm] at (10.5mm, 29.5mm) {};
+\node[draw, thick, fill=white, regular polygon, regular polygon sides=3, minimum width=17mm] at (31.5mm, -12.5mm) {};
+\node[draw, thick, fill=white, regular polygon, regular polygon sides=3, minimum width=17mm] at (-31.5mm, -33.5mm) {};
+\node[draw, thick, fill=white, regular polygon, regular polygon sides=3, minimum width=17mm] at (-10.5mm, -33.5mm) {};
+
+\pic[rotate=45, scale=0.75] at (10.5mm, 10.5mm) {cross={white}};
+\pic[rotate=45, scale=0.75] at (31.5mm, 10.5mm) {cross={white}};
+\pic[rotate=45, scale=0.75] at (-31.5mm, -10.5mm) {cross={white}};
+\pic[rotate=45, scale=0.75] at (-10.5mm, -10.5mm) {cross={psblue}};
+
+}}

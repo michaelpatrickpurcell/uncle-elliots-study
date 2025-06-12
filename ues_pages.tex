@@ -5,16 +5,7 @@
 \begin{document}
 {%
 \thispagestyle{empty}
-		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
-
-%\setmainfont[Scale=1.0]{Caslon Antique}
-\begin{center}
-\makeatletter
-{\footnotesize Version \@version}
-\makeatother
-\end{center}
-
-\vfill
+		\enlargethispage{3\baselineskip} % Move the bottom line (author and date) down a bit
 
 \begin{center}
 {
@@ -24,6 +15,14 @@
 }
 \end{center}
 
+\vfill
+
+\begin{center}
+\begin{tikzpicture}
+\node[draw, line width=2mm, inner sep=0pt] at (0,0) {\includegraphics[width=0.9\textwidth]{Images/newtons_cradle.png}};
+\end{tikzpicture}
+%\includegraphics[width=0.625\textwidth]{Images/baseball.png}
+\end{center}
 
 \vfill{}
 
@@ -122,7 +121,7 @@ You might also describe a power cord leading into Quark's body or a business car
 
 \textit{The device consists of a metal frame with six clear balls suspended between them. Each ball contains a light bulb, of which only the leftmost is currently on.}
 
-\textit{When you touch the device, you notice to your surprise that the balls do not swing freely. Rather, they seem to be some force that causes them to stick to one another.}
+\textit{When you touch the device, you notice to your surprise that the balls do not swing freely. Rather, there seem to be some force that causes them to stick to one another.}
 
 \textcolor{Red}{Encourage your player to play with the device. See the following section for an explanation of what happens as they do.}
 
@@ -139,7 +138,7 @@ Then, if a light was ``pushed'' off the end, the two leftmost balls toggle on/of
 \node at (-0.6cm, 0) {\setmainfont{noto sans symbols 2}\normalsize☞};
 \node at (2.6cm, 0) {\phantom{\setmainfont{noto sans symbols 2}\normalsize☜}};
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,0) {};
@@ -149,7 +148,7 @@ Then, if a light was ``pushed'' off the end, the two leftmost balls toggle on/of
 \draw[ultra thick, ->] (1cm, -0.3cm) -- (1cm, -0.7cm);
 
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] (b) at (0,-1.0cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.4cm,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.4cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,-1.0cm) {};
@@ -163,17 +162,17 @@ Then, if a light was ``pushed'' off the end, the two leftmost balls toggle on/of
 
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,0) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.8cm,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.8cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,0) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white](a) at (2cm,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow](a) at (2cm,0) {};
 
 \draw[ultra thick, ->] (1cm, -0.3cm) -- (1cm, -0.7cm);
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] (b) at (0,-1.0cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.4cm,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] (b) at (0,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.4cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-1.0cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (1.2cm,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (1.2cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (2cm,-1.0cm) {};
 
@@ -188,19 +187,19 @@ Similarly, if you touch the rightmost ball, all of the lights move one ball to t
 \node at (2.6cm, 0) {\setmainfont{noto sans symbols 2}\normalsize☜};
 
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0,0) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.4cm,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.4cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,0) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white](a) at (2cm,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow](a) at (2cm,0) {};
 
 \draw[ultra thick, ->] (1cm, -0.3cm) -- (1cm, -0.7cm);
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] (b) at (0,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] (b) at (0,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-1.0cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (1.6cm,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (1.6cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (2.0cm,-1.0cm) {};
 
 \end{tikzpicture}
@@ -209,21 +208,21 @@ Similarly, if you touch the rightmost ball, all of the lights move one ball to t
 \node at (-0.6cm, 0) {\phantom{\setmainfont{noto sans symbols 2}\normalsize☞}};
 \node at (2.6cm, 0) {\setmainfont{noto sans symbols 2}\normalsize☜};
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,0) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.8cm,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.8cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,0) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white](a) at (2.0cm,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow](a) at (2.0cm,0) {};
 
 \draw[ultra thick, ->] (1cm, -0.3cm) -- (1cm, -0.7cm);
 
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] (b) at (0,-1.0cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.4cm,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.4cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-1.0cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,-1.0cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (2.0cm,-1.0cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (2.0cm,-1.0cm) {};
 
 \end{tikzpicture}
 \end{center}
@@ -236,7 +235,7 @@ Your player's main challenge in Act 2 is to figure out how to unlock the device 
 \begin{tikzpicture}
 \node at (2.6cm, 0) {\setmainfont{noto sans symbols 2}\normalsize☜};
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0,0) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,0) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,0) {};
@@ -251,28 +250,28 @@ Your player's main challenge in Act 2 is to figure out how to unlock the device 
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,-1cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-1cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-1cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (1.6cm,-1cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white](a) at (2cm,-1cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (1.6cm,-1cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow](a) at (2cm,-1cm) {};
 
 \draw[ultra thick, ->] (1cm, -1.3cm) -- (1cm, -1.7cm);
 
 \node at (-0.6cm, -2cm) {\setmainfont{noto sans symbols 2}\normalsize☞};
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0,-2cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.4cm,-2cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0,-2cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.4cm,-2cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-2cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-2cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,-2cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white](a) at (2cm,-2cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow](a) at (2cm,-2cm) {};
 
 \draw[ultra thick, ->] (1cm, -2.3cm) -- (1cm, -2.7cm);
 
 \node at (2.6cm, -3cm) {\setmainfont{noto sans symbols 2}\normalsize☜};
 
 
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0,-3cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0,-3cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.4cm,-3cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.8cm,-3cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.8cm,-3cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-3cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.6cm,-3cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray](a) at (2cm,-3cm) {};
@@ -280,11 +279,11 @@ Your player's main challenge in Act 2 is to figure out how to unlock the device 
 \draw[ultra thick, ->] (1cm, -3.3cm) -- (1cm, -3.7cm);
 
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0,-4cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (0.4cm,-4cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (0.4cm,-4cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (0.8cm,-4cm) {};
 \node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=gray] at (1.2cm,-4cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white] at (1.6cm,-4cm) {};
-\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=white](a) at (2cm,-4cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow] at (1.6cm,-4cm) {};
+\node[inner sep=0pt, minimum width=0.4cm, circle, draw, thick, fill=Yellow](a) at (2cm,-4cm) {};
 \end{tikzpicture}
 \end{center}
 
@@ -315,7 +314,7 @@ The patterns of X's and O's indicate the starting and ending patterns of lights 
 
 \textit{Your uncle moves over to the desk, on which a brown paper bag has appeared.}
 
-\textit{He opens the bag and removes what looks like the receipt for an order from his favorite fast food restaurant.}
+\textit{He opens the bag and examines what looks like the receipt for an order from his favorite fast food restaurant.}
 
 \textit{Then, he glances around the room, repeating the same pattern a few times: first to the southwest, then the southeast, then the northeast, and finally the east.}
 
@@ -333,7 +332,7 @@ Your player's main challenge in Act 3 is to figure out how to activate the devic
 
 To do so, they must place the device on the round table in the middle of the room then lift and release the leftmost or rightmost ball to set the device in motion.
 
-The clues that should suggest this solution are hidden in the poem that the player (should have) found on the desk in Act I. 
+The clues that should suggest this solution to your player are hidden in the poem that they found on the desk in Act I. 
 
 The line ``Tick and Tock, just like a clock, it lets you see the past.'' refers to the sound the device makes as the balls swing and collide with one another.
 
@@ -342,11 +341,11 @@ The line ``Turn it on, then you'll be gone! Let the table give you power.'' refe
 \newpage
 
 \section*{Act 4}
-\textcolor{Red}{Describe what happens after activating the device by reading the following italicized text aloud. }
+\textcolor{Red}{Describe what happens after your player activates the device by reading the following italicized text aloud. }
 
-\textit{The dome in the table emits a blindingly bright beam of energy. When your vision clears, you see the study has changed.}
+\textit{The dome in the table emits a blinding beam of light. When your vision clears, you see the study around you has changed.}
 
-\textit{Everything looks just like it did in the recording. Could this really be the past?}
+\textit{Everything looks just like it did in the hologram. Could this really be the past?}
 
 \textit{Also, you find that you are no longer alone. Uncle Elliot is here! Wearing only an old bathrobe, he looks tired and confused.}
 
@@ -365,7 +364,7 @@ The line ``Turn it on, then you'll be gone! Let the table give you power.'' refe
 \item[Door (E)] The door is open and unlocked. One old bathrobe hangs on a hook nearby. A poster is on the back of the door which cannot be seen while the door is open.
 \textcolor{Red}{Give your player \textbf{Handout 5}, sneaky snakes, when they search the door.}
 
-\item[Table (C)] In the center of the table is a hemispherical indentation that could hold a sphere about the size of your fist. A plug board is built into the surface of the table.
+\item[Table (C)] In the center of the table is a hemispherical indentation about the size of your fist. The device is on the tabletop next to the plug board.
 
 \item[Plug Board (C)] This is a $4 \times 4$ grid with holes of various shapes: squares, circles, triangles, and crosses. The glass rods you saw in the future are nowhere to be found.
 \textcolor{Red}{Give your player \textbf{Handout 6}, unplugged, when they search the plug board.}
@@ -388,23 +387,87 @@ The line ``Turn it on, then you'll be gone! Let the table give you power.'' refe
 
 \newpage
 
-\subsection*{Puzzle 4a: Open the Safe 2}
-test
+\subsection*{Puzzle 4a: Use the Device 2}
+Your player's main challenge in Act 4 is to reactivate the device.
+
+To do so, they must properly configure the table by finding the glass rods, inserting them properly into the plug board, and finding a replacement for the ceramic sphere that is missing from the table. 
+
+The glass rods are locked away in the safe. Your player must unlock the safe to retrieve them. See Puzzle 4b for details.
+
+Then, they must insert the glass rods into the plug board in the ``fast forward'' arrangement. See Puzzle 4c for details.
+
+Finally, they must use Uncle Elliot's baseball to replace the ceramic sphere. See Puzzle 4d for details.
+
+\textcolor{Red}{Once your player has completed all three tasks, they are ready to use the device. Proceed to Act 5.} 
+\newpage
+
+\subsection*{Puzzle 4b: Open the Safe 2}
+Your player must unlock the safe in order to retrieve the glass rods stored within.
+
+To do so, they need to figure out the correct safe combination, i.e. (1, 8, 3, 2).
+
+The clue that should suggest this solution is the sequence of directions Uncle Elliot used while setting the combination in the recording, i.e. (SW, SE, NE, E).
+
+These locations correspond to the various animal-themed decorations in the study, i.e. (Bear, Spiders, Flies, Snakes).
+
+Each decoration corresponds to a type of food or drink in Uncle Elliot's fast food order, i.e. (Beer, Sliders, Fries, Shakes)
+
+Finally, each type of food or drink corresponds to the number of that item that Uncle Elliot ordered, i.e. (1, 8, 3, 2).
+%\begin{center}
+%\begin{tabular}{ccccccc}
+%SW & $\rightarrow$ & Bear & $\rightarrow$ & Beer & $\rightarrow$ & 1\\
+%SE & $\rightarrow$ & Spiders & $\rightarrow$ & Sliders & $\rightarrow$ & 8\\
+%NE & $\rightarrow$ & Flies & $\rightarrow$ & Fries & $\rightarrow$ & 3\\
+%E & $\rightarrow$ & Snakes & $\rightarrow$ & Shake & $\rightarrow$ & 2\\
+%\end{tabular}
+%\end{center}
 
 \newpage
 
-\subsection*{Puzzle 4c: Hide the Key}
-test
+\subsection*{Puzzle 4c: The Plug Board}
+Your player must figure out how to insert the glass rods into the plug board in the \emph{fast forward} arrangement.
+
+Each rod can only be placed in a hole that matches its shape.
+Furthermore, the rods must be placed such that only one rod is in each row and each column.
+
+There are two such arrangements, \emph{rewind} and \emph{fast forward}.
+In the future, the rods were in the \emph{rewind} arrangement.
+The \emph{fast forward} arrangement is depicted below.
+
+\begin{center}
+\begin{tikzpicture}
+\pic[scale=0.5, transform shape] at (0,0) {plugboard};
+\end{tikzpicture}
+\end{center}
 
 \newpage
 
-\subsection*{Puzzle 4b: Use the Device 2}
-test
+\subsection*{Puzzle 4d: The Sphere}
+Your player must find a replacement for the ceramic dome that is missing from the past version of the table.
+
+For years, Uncle Elliot struggled to get his time machine to work properly. One day, his baseball rolled into the beam as he was performing an experiment. It worked!
+
+It turns out that having something round and solid block the beam was the critical ingredient that his design was missing.
+
+In the future, Uncle Elliot uses a bespoke ceramic dome. His baseball, however, will still do the job in a pinch.
+
+The clues that should suggest this solution to your player are the burn marks on the baseball, the dome in the future version of the table, and and the indentation in the past version of the table. 
+ 
+\newpage
+
+\subsection*{Puzzle 4e: The Key}
+This is an optional puzzle that your player can solve to secure their inheritance.
+
+To do so, they must figure out a way to get a door key to the future version of the study.
+This will allow them to escape from the study before the their time expires.
+
+One possible approach is to get the key from Uncle Elliot in the past. Then, hide the key somewhere it is unlikely to be found in the intervening years. When your player arrives in the future, they can recover the key and make their escape.
+
+That said, this is an opportunity for your player to be creative and there are many ways to approach the problem. If your player suggests a solution, try to help them find a way to make it work. There are no wrong answers to this puzzle!
 
 \newpage
 
-
-\section*{Epilogue}
+\section*{Act 5}
 Test
 
 \end{document}
