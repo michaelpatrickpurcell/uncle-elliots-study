@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Heros-Bold}
+
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+
+%\pagecolor{yellow!50}
+\begin{document}
+\begin{tikzpicture}
+\LARGE
+\path (-52.5mm, -74.25mm) -- (52.5mm, 74.25mm);
+
+\path[draw, line width=0.5mm] (0,70mm) -- (0, -70mm);
+\node[inner sep=0pt, rotate=-90, anchor=north] at (47.5mm, 0) {\setmainfont{Tex Gyre Heros-Bold}[Scale=2]\Huge MILK SNAKE};
+\node[inner sep=0pt, rotate=-90] at (17.5mm,40mm) {\includegraphics[height=25mm]{Images/milk_snake.png}};
+\node[rotate=-90, inner sep=0pt, text width=75mm, align=center] at (17.5mm, -30mm) {RED TOUCHES BLACK\\SAFE FOR JACK};
+
+\node[inner sep=0pt, rotate=-90, anchor=north] at (-6mm, 0) {\setmainfont{Tex Gyre Heros-Bold}[Scale=2]\Huge CORAL SNAKE};
+\node[inner sep=0pt, rotate=90] at (-36mm,-40mm) {\includegraphics[height=25mm]{Images/coral_snake.png}};
+\node[rotate=-90, inner sep=0pt, text width=75mm, align=center] at (-36mm, 30mm) {RED TOUCHES YELLOW\\KILLS A FELLOW};
+
+\end{tikzpicture}
+\end{document}
